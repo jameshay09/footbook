@@ -1,0 +1,67 @@
+<?php
+
+ob_start();
+
+session_start();
+
+
+if (!isset($page_title)) {
+	$page_title = 'FootBook';
+
+}
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title><?php echo $page_title; ?></title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+</head>
+<body>
+
+	<div id="header">
+    
+   		<div class="logo">
+        
+        	<a href="index.php"><img src="img/logo.png" alt="image of footbook logo" /></a>
+            
+        </div>
+            <nav>
+            
+            	<ul>
+              
+                  <?php # Script 18.2 - header.html
+	
+                    if (isset($_SESSION['user_id'])) {
+            
+                    echo '<li> <a class="navbar" href="profile.php" title="profile">My Profile</a></li>
+                    	<li> <a class="navbar" href="logout.php" title="Logout">Logout</a></li>
+                    	 
+                    ';
+            
+                    
+                    if ($_SESSION['user_level'] == 1) {
+                        echo '<li> <a class="navbar" href="view_users.php" title="View All Users">View Users</a></li>
+                    ';
+                    }
+                    }else { 
+                        echo '<li> <a class="navbar" href="register.php" title="Register for the Site">Create an Account</a></li>
+                        	  <li> <a class="navbar" href="login.php" title="Login">Login</a></li>
+                        	  <li> <a class="navbar" href="forgot_password.php" title="Password Retrieval">Forgot Your Password?</a></li>
+                        ';
+                        }
+                        ?>
+           
+                 
+				</ul>
+            
+            </nav>
+        
+    	</div>
+    
+
+	<div id="content">

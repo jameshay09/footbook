@@ -1,0 +1,177 @@
+body{
+	margin:0;
+	padding:0;
+	background-image:url(../img/bg.jpg);
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center;
+	font-family: 'Open Sans', sans-serif;
+	width:100vw;
+	height:100vh;
+	overflow:hidden;
+	color:#FFF;
+}
+
+
+p{
+	color:#FFF;
+}
+
+#content{
+	height:auto;
+	width:100vw;
+}
+
+img{
+    max-width:100%;
+    height: auto;
+	
+}
+
+#header{
+	width:100%;
+	height:10vh;
+}
+
+.logo{
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+.navbar{
+	color:#fff;
+	text-decoration:none;
+	font-size:25px;
+}
+
+.foot-navbar{
+	color:#fff;
+	text-decoration:none;
+	font-size:15px;
+	margin-left:50px;
+}
+
+#footer{
+	position:absolute;
+	bottom:0;
+	width:100vw;
+	height:10vh;
+	overflow:hidden;
+	}
+
+ul{
+		position:fixed;
+		top:0;
+		right:2%;
+		color:#fff;
+	}
+	
+	
+ol{
+		position:fixed;
+		bottom:0;
+		right:2%;
+		color:#fff;
+	}
+	
+		li{
+			display:inline;
+			margin-left:30px;
+			color:#fff;
+			
+		}
+		
+			li:active{
+				text-decoration:underline;
+			}
+		
+		
+		
+		
+
+
+	#search-bar-home{
+		width: 40%;
+		padding-top:20%;
+		margin-left:auto;
+		margin-right:auto;
+	}
+		
+			 .search-home{
+				width:100%;
+				box-sizing: border-box;
+				border: 2px solid #ccc;
+				border-radius: 4px;
+				font-size: 16px;
+				background-color: white;
+				background-image: url(../img/search-icon.png);
+				background-position: 10px 10px; 
+				background-repeat: no-repeat;
+				padding: 12px 20px 12px 40px;
+				-webkit-transition: width 0.4s ease-in-out;
+				transition: width 0.4s ease-in-out;
+			}
+			
+#menu{
+	display:inline-block;
+	height:80%;
+	width:100vh;
+	
+}
+
+.stars{
+	width:40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+	.rating-img{
+		width:100%;
+		height:auto;
+	}
+	
+	
+.profile-left{
+	width:50%;
+	height:100vh;
+	float:left;
+}
+
+.profile-right{
+	width:50%;
+	height:100vh;
+	float:left;
+}
+
+#profile-picture{
+	width:auto;
+	padding-top:5%;
+	padding-left:5%;
+	float:left;
+}
+
+	#info{
+		width:100%;
+		padding-top:3%;
+		padding-left:5%;
+		float:left;
+	}
+		.info-name{
+			width:auto;
+			margin-right:10px;
+			float:left;
+		}
+		
+		.info-data{
+			width:auto;
+			float:left;
+		}
+		
+td{
+	color:#000;
+}
+	
+	
